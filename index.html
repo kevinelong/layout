@@ -27,6 +27,7 @@
 
     main {
       background: green;
+      flex-grow: 1;
     }
 
     footer {
@@ -34,15 +35,18 @@
     }
 
     .content {
-      flex:1;
       flex-grow: 1;
-      height:100vh;
+      /* height:100vh; */
       background: grey;
     }
 
     .text-input {
       flex-direction:row;
       background: white;
+    }
+
+    .text-input input[type=text]{
+      flex-grow: 1;
     }
   </style>
 </head>
@@ -54,7 +58,7 @@
       contents 
     </div>
     <div class="text-input">
-      <input><input type="submit">
+      <input type="text"><input type="submit">
     </div>
   </main>
   <footer>footer</footer>
